@@ -537,6 +537,7 @@ dtbo-$(CONFIG_ARCH_RAVELIN) += ravelin-rumi-overlay.dtbo \
 	ravelin-qrd-4gb-overlay.dtbo \
 	montague-rumi-overlay.dtbo \
 	montague-hsp-overlay.dtbo \
+	montague-talyn-overlay.dtbo \
 	montague-moselle-overlay.dtbo \
 	montague-rcm-overlay.dtbo \
 	montague-wsa-overlay.dtbo \
@@ -551,6 +552,7 @@ ravelin-qrd-overlay.dtbo-base := ravelin.dtb ravelinp.dtb montague.dtb montaguep
 ravelin-qrd-4gb-overlay.dtbo-base := ravelin-4gb.dtb ravelinp-4gb.dtb montague.dtb montaguep.dtb
 montague-rumi-overlay.dtbo-base := montague.dtb montaguep.dtb
 montague-hsp-overlay.dtbo-base := montague.dtb montaguep.dtb
+montague-talyn-overlay.dtbo-base := montague-talyn.dtb montaguep.dtb
 montague-moselle-overlay.dtbo-base := montague-4gb.dtb montaguep-4gb.dtb montague.dtb montaguep.dtb
 montague-rcm-overlay.dtbo-base := montague.dtb montaguep.dtb
 montague-wsa-overlay.dtbo-base := montague.dtb montaguep.dtb
@@ -571,6 +573,7 @@ dtb-$(CONFIG_ARCH_RAVELIN) += ravelin-rumi.dtb \
 	ravelinp-qrd-4gb.dtb \
 	montague-rumi.dtb \
 	montague-hsp.dtb \
+	montague-talyn.dtb \
 	montague-moselle.dtb \
 	montague-rcm.dtb \
 	montaguep-rumi.dtb \
@@ -622,7 +625,8 @@ dtbo-$(CONFIG_ARCH_ANORAK) += anorak-rumi-overlay.dtbo \
 		anorak-idp-top-hmt-overlay.dtbo \
 		anorak-idp-top-hsp-overlay.dtbo \
 		anorak-idp-4kdisp-hsp-overlay.dtbo \
-		anorak-idp-4kdisp-hmt-overlay.dtbo
+		anorak-idp-4kdisp-hmt-overlay.dtbo \
+		anorak-idp-hsp-nodisplay-overlay.dtbo
 anorak-rumi-overlay.dtbo-base := anorak.dtb
 anorak-idp-overlay.dtbo-base := anorak.dtb
 anorak-qxr-overlay.dtbo-base := anorak.dtb
@@ -636,6 +640,7 @@ anorak-idp-top-hmt-overlay.dtbo-base := anorak.dtb
 anorak-idp-top-hsp-overlay.dtbo-base := anorak.dtb
 anorak-idp-4kdisp-hsp-overlay.dtbo-base := anorak.dtb
 anorak-idp-4kdisp-hmt-overlay.dtbo-base := anorak.dtb
+anorak-idp-hsp-nodisplay-overlay.dtbo-base := anorak.dtb
 else
 dtb-$(CONFIG_ARCH_ANORAK) += anorak-rumi.dtb \
 		anorak-idp.dtb \
@@ -649,7 +654,8 @@ dtb-$(CONFIG_ARCH_ANORAK) += anorak-rumi.dtb \
 		anorak-idp-top-hmt.dtb \
 		anorak-idp-top-hsp.dtb \
 		anorak-idp-4kdisp-hsp.dtb \
-		anorak-idp-4kdisp-hmt.dtb
+		anorak-idp-4kdisp-hmt.dtb \
+		anorak-idp-hsp-nodisplay.dtb
 endif
 
 ifeq ($(CONFIG_ARCH_LAHAINA), y)
